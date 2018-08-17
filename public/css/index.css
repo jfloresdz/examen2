@@ -1,0 +1,62 @@
+/*
+ * Simple Responsive Grid
+ * A variation of Don't Overthink It Grids, but with
+ * unlimited number of cells per row.
+ * https://css-tricks.com/dont-overthink-it-grids/
+ */
+
+ .grid [class*="col-"] {
+    margin-bottom: 4%;
+  }
+  
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* tablet view */
+  @media all and (min-width: 700px) {
+  
+    .grid [class*="col-"] {
+      float: left;
+      margin-left: 5%;
+    }
+      
+    .grid .col-one-half {
+      width: 47.5%;
+    }
+  
+      
+    /* 1st items per row */
+    .grid .col-one-half:nth-child(2n+1) {
+      margin-left: 0;
+      clear: left;
+    }
+  }
+  
+  /* desktop view */
+  @media all and (min-width: 1000px) {
+      
+    .grid [class*="col-"] {
+      float: left;
+      margin-left: 5%;
+    }
+      
+    .grid .col-one-half {
+      width: 47.5%;
+    }
+      
+    /* 1st items per row */
+    .grid .col-one-half:nth-child(2n+1){
+      margin-left: 0;
+      clear: left;
+    }
+  }
+  
+  
+  .wrapper {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+  }

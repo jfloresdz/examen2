@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* Stilo del nav */
+nav {
+  overflow: hidden;
+  background-image:linear-gradient(to right top, #000000, #171717, #262626, #373737, #484848);
+}
+nav div#izq{
+    float: left;
+    width: 60%;
+    margin-left: 20px;
+}
+nav div#izq h2{
+    width: 150px;
+    margin-right: 10px;
+    float: left;
+}
+nav div#izq i{
+    margin-right: 5px;
+}
+nav div#der{
+    float: right;
+    margin-top: 0px;
+    padding-right: 40px;
+}
+nav div#der i{
+    margin-right: 5px;
+}
+nav div#der nav a{
+    float: right;
+}
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fbb803;
+}
+
+/* La clase sticky se le añade del JS a la hora de realizar el scroll */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Se le agrega cierto padding al contenido */
+.sticky + main {
+  padding-top: 0px;
+}
+
+/*Los estilos del main*/
+main{
+    margin-top: 100px;
+}
+main section#sect1{
+    height: 600px;
+    width: 100%;
+}
+    main section#sect1 div#izq{
+        float: left;
+        width: 35%;
+        padding: 150px 50px 0px 50px;
+    }
+    main section#sect1 div#izq h1{
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 2.75rem;
+    }
+    main section#sect1 div#izq a{
+        padding: 10px 20px;
+        background: #fbb803;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        margin-left: 150px;
+    }
+        main section#sect1 div#izq a:hover{
+            background: #333;
+            color: #fff;
+        }
+    main section#sect1 div#der{
+        float: left;
+        width: 50%;
+        padding-left: 10px;
+    }
+        main section#sect1 div#der img{
+            height: 500px;
+            width: 100%;
+            border-radius: 20px;
+        }
+main section#sect2{
+    height: 300px;
+    text-align: center;
+    padding: 50px 200px 0px 200px;
+    color: #fff;
+    background-image:linear-gradient(to right top, #000000, #171717, #262626, #373737, #484848);
+}
+    main section#sect2 h3{
+        font-size: 2.25rem;
+        padding-bottom: 20px;
+    }
+    main section#sect2 p{
+        line-height: 30px;
+        font-size: 1.10rem;
+    }
+main section#sect3{
+    height: 300px;
+    text-align: center;
+    padding: 50px 200px 0px 200px;
+}
+    main section#sect3 img{
+        padding-right: 15px;
+    }
+    main section#sect3 h3{
+        font-size: 2.25rem;
+        padding-bottom: 20px;
+    }
+    main section#sect3 p{
+        line-height: 30px;
+        font-size: 1.10rem;
+    }
+main section#sect4{
+    height: 500px;
+    width: 100%;
+}
+    main section#sect4 div#izq{
+        width: 47%;
+        float: left;
+        padding: 25px 0px 0px 80px;
+    }
+        main section#sect4 div#izq h4{
+            font-size: 2.25rem;
+            padding-bottom: 30px;
+        }
+        main section#sect4 div#izq p{
+            line-height: 30px;
+            font-size: 1.10rem;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        main section#sect4 div#izq p#anali{
+            line-height: 30px;
+            font-size: 1.10rem;
+            padding-bottom: 125px;
+            padding-left: 20px;
+        }
+    main section#sect4 div#der{
+        width: 40%;
+        float: left;
+        padding-left: 25px;
+        padding-top: 20px;
+    }
+        main section#sect4 div#der img{
+            height: 400px;
+            width: 100%;
+            border-radius: 20px;
+        }
+main section#sect5{
+    height: 500px;
+}
+    main section#sect5 div#izq{
+        width: 45%;
+        float: left;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+        main section#sect5 div#izq img{
+            height: 400px;
+            width: 100%;
+            border-radius: 20px;
+        }
+    main section#sect5 div#der{
+        width: 40%;
+        float: left;
+        padding-left: 65px;
+        padding-top: 20px;
+    }
+        main section#sect5 div#der h4{
+            font-size: 2.25rem;
+            padding-bottom: 30px;
+        }
+        main section#sect5 div#der p{
+            line-height: 30px;
+            font-size: 1.10rem;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        main section#sect5 div#der p#lleva{
+            line-height: 30px;
+            font-size: 1.10rem;
+            padding-bottom: 140px;
+            padding-left: 20px;
+        }
+main section#sect6{
+    height: 300px;
+    background-image:linear-gradient(to right top, #000000, #171717, #262626, #373737, #484848);
+    color: #fff;
+}
+    main section#sect6 div#izq{
+        float: left;
+        width: 20%;
+        padding: 50px 0px 0px 90px;
+    }
+        main section#sect6 div#izq i{
+            padding-right: 10px;
+        }
+    main section#sect6 div#centro{
+        float: left;
+        width: 25%;
+        padding: 50px 0px 0px 140px;
+    }
+        main section#sect6 div#centro h5{
+           font-size: 1.70rem;
+           padding-bottom: 20px;
+        }
+        main section#sect6 div#centro a{
+           text-decoration: none;
+           color: #fff;
+        }
+            main section#sect6 div#centro a:hover{
+                text-decoration: underline;
+                color: #fbb803;
+            }
+    main section#sect6 div#der{
+        float: left;
+        width: 25%;
+        padding: 50px 0px 0px 50px;
+    }
+        main section#sect6 div#der h5{
+           font-size: 1.70rem;
+           padding-bottom: 20px;
+        }
+        main section#sect6 div#der i{
+          padding-right: 10px;
+        }
+        main section#sect6 div#der p{
+            line-height: 30px;
+            font-size: 1.10rem;
+        }
+        main section#sect6 div#der a{
+           text-decoration: none;
+           color: #fff;
+           font-size: 1.10rem;
+        }
+            main section#sect6 div#der a:hover{
+                color: #fbb803;
+            }
+        main section#sect6 div#der a i{
+           padding-top: 30px;
+           padding-right: 20px;
+        }
+footer{
+    height: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
