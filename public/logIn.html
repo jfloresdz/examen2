@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-        <link rel="stylesheet" href="CSS/form_2.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="CSS/login.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="wrap">
         <form class="cf">
-            <img src="IMG/logo_login.png" alt="logo">
+            <img src="IMG/logo_login.png" class="logo" alt="logo">
             <h1>Sistema de Hoteles</h1>
             <div class="half left cf">
                 <input type="text" placeholder="Correo" id="correo">
@@ -25,7 +26,7 @@
         <div class="return">
             <a id="recuperar">Recuperar Contraseña</a>
             <br>
-            <a href="landing.html">Volver al inicio</a>
+            <a id="registroShow">Registrarse</a>
         </div>
     </div>
 
@@ -40,7 +41,51 @@
           </form>
     </div>
 
+    <div class="registro">
+            <form class="cf">
+                    <figure class="snip1566">
+                      <img id="currentFoto" src="IMG/user.png" alt="sq-sample14" />
+                      <figcaption><i class="fas fa-plus"></i></figcaption>
+                      <a id="btnSeleccionarImagen"></a>
+                    </figure>
+                    <br>
+                    <div class="half left cf">
+                      <label for="primerNombre">Primer Nombre</label>
+                      <input type="text" id="primerNombre">
+                      <label for="segundoNombre">Segundo Nombre</label>
+                      <input type="text" id="segundoNombre">
+                      <label for="primerApellido">Primer Apellido</label>
+                      <input type="text" id="primerApellido">
+                      <label for="segundoApellido">Segundo Apellido</label>
+                      <input type="text" id="segundoApellido">
+                      <label for="cedula">Cedula</label>
+                      <input type="text" id="cedula">
+                    </div>
+                    <div class="half right cf">
+                      <input type="hidden" id="foto">
+                      <label for="correo">Correo</label>
+                      <input type="text" id="correoRe">
+                      <label for="contrasenaRe">Contraseña</label>
+                      <input type="text" id="contrasenaRe">
+                      <label for="contrasena2">Repetir Contraseña</label>
+                      <input type="text" id="contrasena2">
+                      <label for="fechaNaciemiento">Fecha Naciemiento</label>
+                      <input type="date" id="fechaNaciemiento">
+                      <label for="sexo">Sexo</label>
+                      <select id="sexo">
+                          <option value="M">Masculino</option>
+                          <option value="F">Femenino</option>
+                      </select>
+                    </div>
+                      <button type="button" class="input-editar" id="btnRegistrar">Registrar</button>
+                      <button type="button" class="input-cancelar" id="Cancelar2">Cancelar</button>
+                  </form>
+    </div>
+
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="js/imagenes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="js/login/login.servicio.js"></script>
     <script src="js/login/login.controlador.js"></script>
