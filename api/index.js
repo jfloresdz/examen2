@@ -65,9 +65,7 @@ app.use( function(req, res, next) {
 /**
  * Exportams todas las rutas dentro del index.js
  */
-const profesores = require('./components/profesores/profesores.route');
-const proyectos = require('./components/proyectos/proyectos.route');
-const estudiante = require('./components/estudiante/estudiante.route');
+const hoteles = require('./components/hoteles/hoteles.route');
 const cliente = require('./components/clientes/clientes.route');
 const admin = require('./components/admin/admin.route');
 const login = require('./components/login/login.route');
@@ -77,9 +75,7 @@ const login = require('./components/login/login.route');
  */
 app.use('/api', admin);
 app.use('/api', login);
-app.use('/api', profesores);
-app.use('/api', proyectos);
-app.use('/api', estudiante);
+app.use('/api', hoteles);
 app.use('/api', cliente);
 // Se guarda todo lo que se ha realizado
 module.exports = app;
