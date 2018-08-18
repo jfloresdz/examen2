@@ -9,7 +9,7 @@
 
 body {
   text-align: center;
-  background: #2D2D2D;
+  background: #ffffff;
   background-attachment: scroll fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -49,7 +49,7 @@ p {
   z-index: 10;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right top, #000000, #171717, #262626, #373737, #484848);
+  background:#FF6161;
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -64,8 +64,9 @@ image-resolution: from-image;
 }
 
 img.small{
-  top:10px;
-    margin: 0.5em 0 1em 0;
+  margin: auto;
+  width: 48px;
+  height: 48px;
 }
 
 .header #menu-action {

@@ -47,14 +47,6 @@ function login(){
                     break;
  
                     case "1":
-                    window.location.assign(baseUrl+"/public/estudianteIndex.html");
-                    break;
- 
-                    case "2":
-                    window.location.assign(baseUrl+"/public/profesorIndex.html");
-                    break;
- 
-                    case "3":
                     window.location.assign(baseUrl+"/public/clienteIndex.html");
                     break;
                 }
