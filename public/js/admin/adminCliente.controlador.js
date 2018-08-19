@@ -115,6 +115,7 @@ function obtenerSeleccionado(id_Cliente){
     foto.value=clientes[0]['foto'];
     fechaNaciemiento.value=clientes[0]['fechaNaciemiento'];
     sexo.value=clientes[0]['sexo'];
+    idCliente.value=id_Cliente;
     document.querySelector('#currentFoto').src=clientes[0]['foto'];
     cambiar();
 }
