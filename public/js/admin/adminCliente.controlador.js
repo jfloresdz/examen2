@@ -131,7 +131,6 @@ function cambiar2() {
     limpiarForm();
 }
 
-
 function limpiarForm(){
     primerNombre.value=null;
         segundoNombre.value=null;
