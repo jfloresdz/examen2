@@ -321,13 +321,13 @@ img.small{
   border-radius: 0px;
   width: 25%;
   margin-top: 1em;
-  margin-left: -75%;
+  margin-left: -65%;
   -moz-box-shadow: 0 3px 3px rgba(0, 0.1, 0, 0.1);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0.1, 0, 0.1);
   box-shadow: 0 3px 3px rgba(0, 0.1, 0, 0.1);
   resize: none;
   font-size: 1em;
-  background: #f7b600;
+  background: #FF6161;
   color: white;
   cursor: pointer;
 }

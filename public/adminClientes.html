@@ -7,7 +7,6 @@
 
     <!-- / CSS -->
       <link rel="stylesheet" href="CSS/Home.css" type="text/css" >
-      <link rel="stylesheet" href="CSS/tab.css" type="text/css" >
       <link rel="stylesheet" type="text/css" href="CSS/form_1.css">
       <link rel="stylesheet" type="text/css" href="CSS/Table.css">
       <link rel="stylesheet" href="css/map.css">
@@ -28,75 +27,17 @@
     </div>
     <div class="sidebar">
         <ul>
-            <li><a href="adminIndex.html"><i class="fas fa-home"></i><span>Inicio</span></a></li>
-            <li><a href="adminProfesores.html"><i class="fas fa-chalkboard-teacher"></i><span>Profesor</span></a></li>
-            <li><a href="adminEstudiantes.html"><i class="fas fa-user-graduate"></i><span>Estudiantes</span></a></li>
-            <li><a ><i class="fas fa-user-tie"></i><span>Clientes</span></a></li>
-            <li><a href="adminProyectos.html"><i class="fas fa-project-diagram"></i><span>Proyectos</span></a></li>
-            <li><a id="salir" class="exit"><i class="fas fa-sign-out-alt"></i><span>Log out</span></a></li>
+            <li><a><i class="fas fa-home"></i><span>Hoteles</span></a></li>
+            <li><a href="adminClientes.html"><i class="fas fa-user"></i><span>Clientes</span></a></li>
+            <li><a id="salir" class="exit"><i class="fas fa-sign-out-alt"></i><span>Salir</span></a></li>
         </ul>
     </div>
 </header>
 <!-- Content -->
 <main>
     <div class="main">
-        <div class="tab">
-          <ul class="tabs">
-            <li><a href="">Registrar</a></li>
-            <li><a href="">Listar</a></li>
-          </ul> 
-          <!-- / tabs -->
-
-          <div class="tab_content">
-
-            <div class="tabs_item">
-                    <form class="cf">
-                      <figure class="snip1566">
-                        <img id="currentFoto" src="IMG/user.png" alt="sq-sample14" />
-                        <figcaption><i class="fas fa-plus"></i></figcaption>
-                        <a id="btnSeleccionarImagen"></a>
-                      </figure>
-                      <br>
-                      <div class="half left cf">
-                        <input type="text" id="nombre" placeholder="Nombre">
-                        <input type="email" id="correo" placeholder="Email">
-                        <input type="text" id="telefono" placeholder="Telefono">
-                        <input type="text" id="cedula" placeholder="Cedula">
-                        <input type="text" id="contactoNombre" placeholder="Nombre Contacto">
-                        <input type="text" id="contactoTel" placeholder="Telefono Contacto">
-                        <input type="text" id="contactoEmail" placeholder="Email Contacto">
-                      </div>
-                      <div class="half right cf">
-                        <input type="hidden" id="foto">
-                        <!-- search input box -->
-                        <div class="input-group">
-                          <input type="text" id="search_location" class="form-control" placeholder="Lugar">
-                          <div class="input-group-btn">
-                              <button class="btn btn-default get_map input-submit" type="button" id="btnMapa">
-                                  Buscar
-                              </button>
-                          </div>
-                      </div>
-                      
-                      <!-- display google map -->
-                      <section id="cd-google-map">
-                        <div id="google-container"></div>
-                        <div id="cd-zoom-in"></div>
-                        <div id="cd-zoom-out"></div>
-                      </section>
-                      </div>
-                      
-                        
-                        <!-- display selected location information -->
-                        <input type="hidden" id="latitude" class="search_latitude" size="30">
-                        <input type="hidden" id="longitude" class="search_longitude" size="30">
-                      <button type="button" class="input-submit" id="registrar">Registrar</button>
-                    </form>
-                </div>
-
-            <div class="tabs_item">
-
-                <div class="flexsearch">
+        <div id="box1">
+            <div class="flexsearch">
                     <div class="flexsearch--wrapper">
                         <div class="flexsearch--form">
                             <div class="flexsearch--input-wrapper">
@@ -109,17 +50,17 @@
                         </div>
                     </div>
                 </div>
-
                     <div class="table-users">
                       <div class="tittle">Clientes</div>
-                        <table class="table" cellspacing="0" width="100%" id="table-users">
+                        <table class="table" cellspacing="0" width="100%" id="table-Clientes">
                           <thead>
                             <tr>
-                              <th>Nombre</th>
+                              <th>Foto</th>
+                              <th>Primer Nombre</th>
+                              <th>Primer Apellido</th>
                               <th>Cedula</th>
-                              <th>Telefono</th>
-                              <th>Correo</th>
                               <th>Editar</th>
+                              <th>Eliminar</th>
                             </tr>
                           </thead>
                         <tbody>
@@ -127,41 +68,50 @@
                         </tbody>
                         </table>
                   </div>
-          </div>
-      </div>
-  </div>
-<!--end of tabs-->
+                  </div>
 
-  <div class="edit-box">
-    <form class="cf">
-      <figure class="snip1566">
-        <img id="editFotoShow" src="IMG/user.png" alt="sq-sample14" />
-        <figcaption><i class="fas fa-plus"></i></figcaption>
-        <a id="btnEditarImagen"></a>
-      </figure>
-      <br>
-      <div class="half left cf">
-        <input type="text" id="editNombre" placeholder="Nombre">
-        <input type="email" id="editCorreo" placeholder="Email">
-        <input type="text" id="editTelefono" placeholder="Telefono">
-        <input type="text" id="editCedula" placeholder="Cedula">
-        <input type="text" id="editContactoNombre" placeholder="Nombre Contacto">
-        <input type="text" id="editContactoTel" placeholder="Telefono Contacto">
-        <input type="text" id="editContactoEmail" placeholder="Email Contacto">
+      <div class="edit-box">
+          <form class="cf">
+                  <figure class="snip1566">
+                    <img id="currentFoto" src="IMG/user.png" alt="sq-sample14" />
+                    <figcaption><i class="fas fa-plus"></i></figcaption>
+                    <a id="btnSeleccionarImagen"></a>
+                  </figure>
+                  <br>
+                  <div class="half left cf">
+                      <label for="primerNombre">Primer Nombre</label>
+                      <input type="text" id="primerNombre">
+                      <label for="segundoNombre">Segundo Nombre</label>
+                      <input type="text" id="segundoNombre">
+                      <label for="primerApellido">Primer Apellido</label>
+                      <input type="text" id="primerApellido">
+                      <label for="segundoApellido">Segundo Apellido</label>
+                      <input type="text" id="segundoApellido">
+                      <label for="cedula">Cedula</label>
+                      <input type="text" id="cedula">
+                  </div>
+                  <div class="half right cf">
+                  <input type="hidden" id="foto">
+                  <input type="hidden" id="idCliente">
+                  <label for="correo">Correo</label>
+                  <input type="text" id="correoRe">
+                  <label for="contrasenaRe">Contraseña</label>
+                  <input type="text" id="contrasenaRe">
+                  <label for="contrasena2">Repetir Contraseña</label>
+                  <input type="text" id="contrasena2">
+                  <label for="fechaNaciemiento">Fecha Nacimiento</label>
+                  <input type="date" id="fechaNaciemiento">
+                  <label for="sexo">Sexo</label>
+                  <select id="sexo">
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                  </select>
+                  </div>
+                    <button type="button" class="input-editar" id="registrar">Registrar</button>
+                    <button type="button" class="input-cancelar" id="cancelar">Cancelar</button>
+                </form>
       </div>
-      <div class="half right cf">
-        <section id="cd-google-map2">
-          <div id="google-container2"></div>
-          <div id="cd-zoom-in2"></div>
-          <div id="cd-zoom-out2"></div>
-        </section>
-        <input type="hidden" id="editFoto">
-        <input type="hidden" id="editId">
-      </div>
-      <button type="button" class="input-editar" id="btnEditar">Editar</button>
-      <button type="button" class="input-cancelar" id="Cancelar">Cancelar</button>
-    </form>
-  </div>
+    </div>
 </main>
 
 <footer>
@@ -179,16 +129,12 @@
     <!-- Inicio: Scripts de estilos -->
     <script src="JS/Home.js"></script>
     <script src="JS/Tab.js"></script>
-    <script src="JS/form.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm453fVYnWQvAG2GG1VyB_VA9dnMfIK3E"
-  type="text/javascript"></script>
-  <script src="js/map.js"></script>
-  <script src="js/mapCapture.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm453fVYnWQvAG2GG1VyB_VA9dnMfIK3E" type="text/javascript"></script>
     <!-- Fin: Scripts de estilos -->
 
     <script src="js/imagenes.js"></script>
-    <!--<script src="js/admin/admin.servicio.js"></script>
-    <script src="js/admin/adminCliente.controlador.js"></script>-->
+    <script src="js/admin/admin.servicio.js"></script>
+    <script src="js/admin/adminCliente.controlador.js"></script>
 </footer>
 <!-- / JS-scripts -->
 

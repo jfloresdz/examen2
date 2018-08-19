@@ -19,7 +19,7 @@ form {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  border:6px solid #666666;
+  border:6px solid #FF6161;
   -moz-box-shadow: 0 5px 5px rgba(0, 0.1, 0, 0.1);
   -webkit-box-shadow: 0 5px 5px rgba(0, 0.1, 0, 0.1);
   box-shadow: 0 5px 5px rgba(0, 0.1, 0, 0.1);
@@ -35,6 +35,7 @@ form input:not([type="checkbox"]), form textarea, form select, .input-submit {
   display: block;
   width: 100%;
   margin-top: 1em;
+  margin-bottom: 5px;
   -moz-box-shadow: 0 3px 3px rgba(0, 0.1, 0, 0.1);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0.1, 0, 0.1);
   box-shadow: 0 3px 3px rgba(0, 0.1, 0, 0.1);
@@ -58,7 +59,7 @@ form input:[type="checkbox"]{
 form .input-submit,form .input-editar {
   color: white;
   font-size: 1em;
-  background: #f7b600;
+  background: #002A3F;
   cursor: pointer;
 }
 
@@ -98,6 +99,11 @@ form p{
   float: left;
   width: 48%;
   margin-bottom: 1em;
+}
+
+.registrar{
+  width: 25%;
+  height: 25%;
 }
 
 .right {
@@ -296,4 +302,8 @@ input[type='checkbox']:checked + label > span:before{
 .snip1566.hover:after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+label{
+  color: #a8a8a8;
 }

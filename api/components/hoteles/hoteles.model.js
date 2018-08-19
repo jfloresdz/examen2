@@ -2,11 +2,12 @@
 let mongoose = require('mongoose');
 
 let calificaion= mongoose.Schema({
+    id_user:{type: Number, required:true},
     comida:{type: Number, required:true},
     calidad:{type: Number, required:true},
     habitacion:{type: Number, required:true},
     infraestructura:{type: Number, required:true},
-    limpieza:{type: Number, required:true},
+    limpieza:{type: Number, required:true}
 });
 
 let hotelSchema = mongoose.Schema({

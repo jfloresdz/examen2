@@ -74,7 +74,7 @@ module.exports.comprobarCorreo = function(req, res){
                             res.send({
                             "_id":clientes[0]._id,
                             "_result":true,
-                            "tipo":"3"
+                            "tipo":"1"
                         })
                             }else{
                                 res.send({
@@ -133,15 +133,15 @@ function enviarMail(correo,contrasena) {
              <td>
                <table align="left">
                  <tr>
-                   <td width="150px" height="150px" class="Logo">
-                   <img src="https://image.flaticon.com/icons/png/512/235/235889.png">
+                   <td width="50px" height="50px" class="Logo">
+                   <img width="50px" height="50px"src="https://image.flaticon.com/icons/png/512/235/235889.png">
                    </td>
                  </tr>
                </table>
                <table align="right">
                  <tr>
                    <td height="70" class="viewWebsite">
-                     <p style="font-family: Arial, Helvetica, sans-serif; color: #ffffff; font-size: 14px;">Cenfotec Software House</p>
+                     <p style="font-family: Arial, Helvetica, sans-serif; color: #ffffff; font-size: 14px;">Sistema de hoteles</p>
                    </td>
                  </tr>
                </table>
@@ -166,7 +166,7 @@ function enviarMail(correo,contrasena) {
                        Su nueva contraseña es:
                        </p>
                        <p>
-                       Contraseña: <b>${contrasena}</b>.
+                       Contraseña: <b>${contrasena}</b>
                        </p>
                      </td>
                      <td width="30" class="spacer">&nbsp;</td>

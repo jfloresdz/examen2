@@ -35,7 +35,7 @@ module.exports.registrar = function(req,res){
             let mailOptions = {
                 from: 'hotelesexamen2@gmail.com',
                 to: nuevoCliente.correo,
-                subject: 'Bievenido a Cenfo App',
+                subject: 'Bievenido al sistema de hoteles',
                 html:
                  `
                  <html>
@@ -46,8 +46,8 @@ module.exports.registrar = function(req,res){
                      <td>
                        <table align="left">
                          <tr>
-                           <td width="150px" height="150px" class="Logo">
-                             <img src="https://image.flaticon.com/icons/png/512/235/235889.png">
+                           <td width="50px" height="50px" class="Logo">
+                             <img width="50px" height="50px" src="https://image.flaticon.com/icons/png/512/235/235889.png">
                            </td>
                          </tr>
                        </table>

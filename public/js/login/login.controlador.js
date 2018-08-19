@@ -129,6 +129,7 @@ function validarRegistro() {
     }else{
         let revisarCorreo = comprobarCorreo(correoRe.value);
         if(revisarCorreo['_result']){
+            resultado=false;
             toastr.error('Correo se encuentra ya registrado');
         }
     }
@@ -200,7 +201,6 @@ function cambiarContrasena(){
                 comprobacion=contrasenaCliente(respuesta['_id'],InputCorreoRecuperar.value);
                 cancelar();
             break;
-
         }
         toastr.success(comprobacion['msj']);
     }else{
